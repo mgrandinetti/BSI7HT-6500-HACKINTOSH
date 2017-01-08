@@ -18,7 +18,6 @@ work:
 - Lan (if you plug cable in Internal Lan, system doesn't want to shutdown. Work around is to use external Usb Ethernet. I exposed issue in IntelMausiEthernet.kext GitHub)
 
 doesn't work:
-- Shutdown (the system stay with led lights and sometimes fan at maximum speed. If I restart and shutdown immediately system Halt without problem)
 - Memory card reader
 - Internal Intel Wifi (no MWI support for the moment)
 
