@@ -93,7 +93,13 @@
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>xosi</string>
+				<string>XOSI</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>SATA</string>
 			</dict>
 		</array>
 		<key>HaltEnabler</key>
@@ -295,38 +301,6 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>change 15 port limit to 26 in XHCI kext (100-series) 10.12</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				g710////EA==
-				</data>
-				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
-				<key>Replace</key>
-				<data>
-				g710////Gw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>t2-10.11.4-SKL-1912000-4_displays</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AQMDAw==
-				</data>
-				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AQMEAw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>t2-10.11.4-SKL-1912000-Port_0x5-DP2HDM</string>
 				<key>Disabled</key>
 				<false/>
@@ -339,6 +313,22 @@
 				<key>Replace</key>
 				<data>
 				AQUJAAAIAACHAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>change 15 port limit to 26 in XHCI kext (100-series) 10.12</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				g710////EA==
+				</data>
+				<key>Name</key>
+				<string>AppleUSBXHCIPCI</string>
+				<key>Replace</key>
+				<data>
+				g710////Gw==
 				</data>
 			</dict>
 			<dict>
@@ -375,6 +365,22 @@
 				<key>Replace</key>
 				<data>
 				Qb4PAAAA60Q=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>t2-10.11.4-SKL-1912000-4_displays</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AQMDAw==
+				</data>
+				<key>Name</key>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AQMEAw==
 				</data>
 			</dict>
 		</array>
