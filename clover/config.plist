@@ -93,13 +93,13 @@
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>XOSI</string>
+				<string>SATA</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>SATA</string>
+				<string>XOSI</string>
 			</dict>
 		</array>
 		<key>HaltEnabler</key>
@@ -132,7 +132,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>npci=0x2000 nv_disable=1 kext-dev-mode=1</string>
+		<string>slide=0 npci=0x2000 nv_disable=1 kext-dev-mode=1</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -317,6 +317,24 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>10.11.dp BT4LE-Handoff-Hotspot, credit RehabMan based on Dokterdok patch</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SIX/dEdIiwc=
+				</data>
+				<key>MatchOS</key>
+				<string>10.11.x,10.12.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOBluetoothFamily</string>
+				<key>Replace</key>
+				<data>
+				Qb4PAAAA60Q=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>change 15 port limit to 26 in XHCI kext (100-series) 10.12</string>
 				<key>Disabled</key>
 				<true/>
@@ -347,24 +365,6 @@
 				<key>Replace</key>
 				<data>
 				AQAA6yU=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.11.dp BT4LE-Handoff-Hotspot, credit RehabMan based on Dokterdok patch</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SIX/dEdIiwc=
-				</data>
-				<key>MatchOS</key>
-				<string>10.11.x,10.12.x</string>
-				<key>Name</key>
-				<string>com.apple.iokit.IOBluetoothFamily</string>
-				<key>Replace</key>
-				<data>
-				Qb4PAAAA60Q=
 				</data>
 			</dict>
 			<dict>
