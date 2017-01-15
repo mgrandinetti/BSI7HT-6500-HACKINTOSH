@@ -12,9 +12,21 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>DeleteUnused_400000</key>
+				<key>AddDTGP_0001</key>
 				<true/>
-				<key>FixShutdown_0004</key>
+				<key>AddIMEI_80000</key>
+				<true/>
+				<key>AddMCHC_0008</key>
+				<true/>
+				<key>FIX_RTC_20000</key>
+				<true/>
+				<key>FIX_TMR_40000</key>
+				<true/>
+				<key>FixHPET_0010</key>
+				<true/>
+				<key>FixIPIC_0040</key>
+				<true/>
+				<key>FixSBUS_0080</key>
 				<true/>
 				<key>NewWay_80000000</key>
 				<true/>
@@ -87,7 +99,7 @@
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>xh_rvp10</string>
+				<string>XOSI</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
@@ -99,7 +111,7 @@
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>XOSI</string>
+				<string>xh_rvp10</string>
 			</dict>
 		</array>
 		<key>HaltEnabler</key>
@@ -127,12 +139,13 @@
 			<string>SSDT-3.aml</string>
 			<string>SSDT-4.aml</string>
 			<string>SSDT-5.aml</string>
+			<string>SSDT-6.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>slide=0 npci=0x2000 nv_disable=1 kext-dev-mode=1</string>
+		<string>slide=0 nv_disable=1 kext-dev-mode=1</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -301,18 +314,18 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>t2-10.11.4-SKL-1912000-Port_0x5-DP2HDM</string>
+				<string>t2-10.11.4-SKL-1912000-4_displays</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				AQUJAAAEAACHAQAA
+				AQMDAw==
 				</data>
 				<key>Name</key>
 				<string>AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
-				AQUJAAAIAACHAQAA
+				AQMEAw==
 				</data>
 			</dict>
 			<dict>
@@ -331,6 +344,22 @@
 				<key>Replace</key>
 				<data>
 				Qb4PAAAA60Q=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>t2-10.11.4-SKL-1912000-Port_0x5-DP2HDM</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AQUJAAAEAACHAQAA
+				</data>
+				<key>Name</key>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AQUJAAAIAACHAQAA
 				</data>
 			</dict>
 			<dict>
@@ -365,22 +394,6 @@
 				<key>Replace</key>
 				<data>
 				AQAA6yU=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>t2-10.11.4-SKL-1912000-4_displays</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AQMDAw==
-				</data>
-				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AQMEAw==
 				</data>
 			</dict>
 		</array>
@@ -439,8 +452,6 @@
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
-		<true/>
-		<key>NoCaches</key>
 		<true/>
 	</dict>
 </dict>
