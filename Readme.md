@@ -12,10 +12,10 @@ work:
 - Thunderbolt 3 (thunderbolt2 adapter tested)
 - Power management (I use smcfancontroll to reduce fan speed to 2600rpm)
 - Reboot
-- Shutdown
+- Shutdown fixed with use IntelAppleE1000e.kext
 - Wake/sleep
 - Audio (HDMI audio codec support, microphone, headphone)
-- Lan (if you plug cable in Internal Lan, system doesn't want to shutdown. Work around is to use external Usb Ethernet. I exposed issue in IntelMausiEthernet.kext GitHub)
+- Lan (IntelAppleE1000e.kext)
 
 doesn't work:
 - Memory card reader
@@ -24,7 +24,7 @@ doesn't work:
 Bios Section:
 To enable osx thunderbolt use in thunderbolt section legacy mode.
 
-Clover version: 3974
+Clover version: 3998
 
 I have started GitHub public:
 https://github.com/mgrandinetti/BSI7HT-6500-HACKINTOSH
