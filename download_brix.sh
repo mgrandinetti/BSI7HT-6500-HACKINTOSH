@@ -1,4 +1,4 @@
-
+#inizial release
 #set -x
 
 function download()
@@ -16,17 +16,28 @@ function download()
     echo
 }
 
-if [ ! -d ./downloads ]; then mkdir ./downloads; fi && rm -Rf downloads/* && cd ./downloads
 
-# download kexts
-mkdir ./kexts && cd ./kexts
-download os-x-fakesmc-kozlek RehabMan-FakeSMC
-download os-x-eapd-codec-commander RehabMan-CodecCommander
-download os-x-fake-pci-id RehabMan-FakePCIID
+if [ "$1" = "download" ]
+  then
+  if [ ! -d ./downloads ]; then mkdir ./downloads; fi && rm -Rf downloads/* && cd ./downloads
 
-https://github.com/vit9696/AppleALC/releases/latest
+  # download kexts
+  mkdir ./kexts && cd ./kexts
+  download os-x-fakesmc-kozlek RehabMan-FakeSMC
+  download os-x-eapd-codec-commander RehabMan-CodecCommander
+  download os-x-fake-pci-id RehabMan-FakePCIID
 
-#download os-x-acpi-debug RehabMan-Debug
-cd ..
+  #https://github.com/vit9696/AppleALC/releases/latest
 
-# download tools
+  #download os-x-acpi-debug RehabMan-Debug
+  cd ..
+
+  # download tools
+fi
+
+if [ "$1" = "kext" ]
+  then
+  sudo kextcache -system-prelinked-kernel
+  sudo kextcache -system-caches
+fi
+  
