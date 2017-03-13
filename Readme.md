@@ -30,10 +30,11 @@ I have started GitHub public:
 https://github.com/mgrandinetti/BSI7HT-6500-HACKINTOSH
 
 10/03/2017 update:
-MONITOR 5KLG works out of the box with thunderbolt3. Max resolution is 3840x2160@60Hz
-Webcam works
-Audio Wors
-usb-c ports works
+- MONITOR 5KLG works out of the box with thunderbolt3. Max resolution is 3840x2160@60Hz
+- Webcam works
+- Audio Wors
+- usb-c ports works
+- Mic works
 
 Credits to
 cnrd and salaman to use this to generate usb port ssdt https://github.com/cnrd/OSX-USB-SSDT
