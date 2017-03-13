@@ -24,13 +24,16 @@ doesn't work:
 Bios Section:
 To enable osx thunderbolt use in thunderbolt section legacy mode.
 
-Clover version: 3998
+Clover version: 4035
 
 I have started GitHub public:
 https://github.com/mgrandinetti/BSI7HT-6500-HACKINTOSH
 
-
-thank in advance and I hope Help me to realize a perfect hackintosh with this machine. I hope to use this with LG 5K Monitor
+10/03/2017 update:
+MONITOR 5KLG works out of the box with thunderbolt3. Max resolution is 3840x2160@60Hz
+Webcam works
+Audio Wors
+usb-c ports works
 
 Credits to
 cnrd and salaman to use this to generate usb port ssdt https://github.com/cnrd/OSX-USB-SSDT
