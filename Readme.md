@@ -24,7 +24,7 @@ doesn't work:
 Bios Section:
 To enable osx thunderbolt use in thunderbolt section legacy mode.
 
-Clover version: 4035
+Clover version: 4099
 
 I have started GitHub public:
 https://github.com/mgrandinetti/BSI7HT-6500-HACKINTOSH
@@ -38,3 +38,10 @@ https://github.com/mgrandinetti/BSI7HT-6500-HACKINTOSH
 
 Credits to
 cnrd and salaman to use this to generate usb port ssdt https://github.com/cnrd/OSX-USB-SSDT
+
+Release 1.6
+Update FakeSMC.kext
+Update Lilo.kext
+Update AppleALC.kext
+Update FakePCIID.kext
+Minor bug fix
